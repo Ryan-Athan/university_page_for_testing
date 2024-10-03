@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-900 flex justify-center items-center h-screen">
+    <!-- Container -->
+    <div class="bg-white shadow-md rounded-lg flex max-w-4xl w-full">
+        <!-- Image Section -->
+        <div class="hidden md:block w-1/2">
+            <img src="../assets/images/headear_img/registerimg.jpg"
+                alt="Register Illustration" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Form Section -->
+        <div class="w-full md:w-1/2 p-10">
+            <h1 class="text-3xl font-bold mb-6 text-gray-800 text-center">Register With Us</h1>
+
+            <form>
+                <!-- Name Fields -->
+                <div class="flex gap-4 mb-4">
+                    <div class="w-1/2">
+                        <label for="firstname" class="block text-sm font-medium text-gray-700">First Name</label>
+                        <div class="mt-1 flex items-center">
+                            <i class="fas fa-user text-gray-500 mr-2"></i>
+                            <input type="text" id="firstname" name="firstname" placeholder="Anton"
+                                class="w-full border border-gray-300 rounded-lg py-2 px-3 text-gray-700 focus:ring-purple-500 focus:border-purple-500">
+                        </div>
+                    </div>
+
+                    <div class="w-1/2">
+                        <label for="lastname" class="block text-sm font-medium text-gray-700">Last Name</label>
+                        <div class="mt-1 flex items-center">
+                            <i class="fas fa-user text-gray-500 mr-2"></i>
+                            <input type="text" id="lastname" name="lastname" placeholder="Christ"
+                                class="w-full border border-gray-300 rounded-lg py-2 px-3 text-gray-700 focus:ring-purple-500 focus:border-purple-500">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email Field -->
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <div class="mt-1 flex items-center">
+                        <i class="fas fa-envelope text-gray-500 mr-2"></i>
+                        <input type="email" id="email" name="email" placeholder="Enter your email"
+                            class="w-full border border-gray-300 rounded-lg py-2 px-3 text-gray-700 focus:ring-purple-500 focus:border-purple-500">
+                    </div>
+                </div>
+
+                <!-- Password Field -->
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <div class="mt-1 flex items-center">
+                        <i class="fas fa-lock text-gray-500 mr-2"></i>
+                        <input type="password" id="password" name="password" placeholder="********"
+                            class="w-full border border-gray-300 rounded-lg py-2 px-3 text-gray-700 focus:ring-purple-500 focus:border-purple-500">
+                    </div>
+                </div>
+
+                <!-- Register Button -->
+                <div class="flex justify-center">
+                    <button type="submit"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg focus:ring-purple-500 focus:ring-offset-2 transition duration-300">
+                        Register Now
+                    </button>
+                </div>
+            </form>
+
+            <!-- Already Registered -->
+            <p class="mt-4 text-center text-sm text-gray-500">
+                Already Registered? <a href="./loginpage.html" class="text-purple-600 hover:underline">Login Here</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
