@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /private/
 Sitemap: https://university-of-computer-technology.onrender.com/index.html/sitemap.xml
