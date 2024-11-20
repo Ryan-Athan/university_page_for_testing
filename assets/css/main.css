@@ -1788,6 +1788,7 @@ section,
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
+  
 }
 
 /*--------------------------------------------------------------
@@ -1873,6 +1874,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+/* .starter-section {
+  /* Add your styles here
+} */
