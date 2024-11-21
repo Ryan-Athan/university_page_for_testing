@@ -1,0 +1,39 @@
+.program-card .card-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .program-card .card-image img {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .program-card .card-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .program-card:hover .card-image img {
+    transform: scale(1.1);
+  }
+  
+  .program-card:hover .card-image .overlay {
+    opacity: 1;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  

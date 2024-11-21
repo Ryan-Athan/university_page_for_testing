@@ -1877,3 +1877,174 @@ section,
 /* .starter-section {
   /* Add your styles here
 } */
+
+/*--------------------------------------------------------------
+# Academic Section Section
+--------------------------------------------------------------*/
+/* Card Style */
+.programs .modern-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.programs .modern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Icon Style */
+.programs .card-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+}
+
+/* Card Body */
+.programs .card-body {
+  padding-top: 50px;
+}
+
+.programs .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.programs p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.programs ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.programs ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.programs ul li i {
+  color: #007bff;
+  margin-right: 8px;
+}
+
+.btn-get-started {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 36px;
+  border-radius: 50px;
+  transition: 0.3s;
+  border: 2px solid var(--accent-color);
+}
+
+.btn-get-started:hover {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .programs .modern-card {
+    margin-bottom: 20px;
+  }
+
+  .programs .card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Faq Section
+--------------------------------------------------------------*/
+.section-title_1 {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title_1 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title_1 h2:before,
+.section-title_1 h2:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: var(--accent-color);
+  display: inline-block;
+}
+
+.section-title_1 h2:before {
+  margin: 0 15px 10px 0;
+}
+
+.section-title_1 h2:after {
+  margin: 0 0 10px 15px;
+}
+
+.section-title_1 p {
+  margin-bottom: 0;
+}
+
+.faq .faq-item {
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.faq .faq-item i {
+  color: var(--accent-color);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.faq .faq-item h4 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.faq .faq-item p {
+  font-size: 15px;
+}
+
+.faq .faq-item:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.faq .faq-item:last-child {
+  border: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
