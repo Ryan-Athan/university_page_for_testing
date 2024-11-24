@@ -2048,3 +2048,150 @@ section,
   padding-bottom: 0;
   margin-bottom: 0;
 }
+
+
+/*--------------------------------------------------------------
+# Calendar Section
+--------------------------------------------------------------*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e8f5e9; /* Light green background */
+}
+
+.calendar-header {
+  background: linear-gradient(135deg, #43a047, #66bb6a); /* Green gradient */
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 0 0 50px 50px;
+}
+
+.calendar-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.calendar-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 30px;
+}
+
+.calendar-table th {
+  background-color: #43a047; /* Dark green */
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.calendar-table tr:hover {
+  background-color: rgba(67, 160, 71, 0.1); /* Lighter green on hover */
+  transition: background-color 0.3s ease;
+}
+
+.photo-section img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn-custom {
+  background-color: #43a047; /* Button in dark green */
+  color: white;
+  transition: background-color 0.3s;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+}
+
+.btn-custom:hover {
+  background-color: #388e3c;
+}
+
+.back-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Financial Section
+--------------------------------------------------------------*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e8f5e9; /* Light green background */
+}
+
+.header-section {
+  background: linear-gradient(135deg, #43a047, #66bb6a);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 0 0 50px 50px;
+}
+
+.header-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.info-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 30px;
+}
+
+.info-icon {
+  font-size: 48px;
+  color: #43a047;
+  margin-bottom: 20px;
+}
+
+.info-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.info-text {
+  font-size: 18px;
+  color: #555;
+}
+
+.photo-section img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn-custom {
+  background-color: #43a047;
+  color: white;
+  transition: background-color 0.3s;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Admission Section
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
+

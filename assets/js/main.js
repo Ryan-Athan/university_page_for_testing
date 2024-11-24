@@ -134,3 +134,49 @@
   window.addEventListener("load", initSwiper);
 
 })();
+
+
+// for course sidebar
+document.addEventListener('DOMContentLoaded', () => {
+  const sidebarLinks = document.querySelectorAll('.sidebar-link');
+  const dropdownToggles = document.querySelectorAll('.sidebar > ul > li > a');
+
+  // Function to remove the active class from all links
+  const removeActiveClass = () => {
+    sidebarLinks.forEach(link => link.classList.remove('active'));
+  };
+
+  // Add click event listener to all sidebar links (dropdown and regular)
+  sidebarLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.stopPropagation(); // Prevent the link's default behavior for now
+      removeActiveClass(); // Remove active class from all links
+      this.classList.add('active'); // Add active class to clicked link
+    });
+  });
+
+  // Add click event to toggle dropdown visibility
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function () {
+      const dropdown = this.nextElementSibling; // The next element (dropdown list)
+      dropdown.classList.toggle('active'); // Toggle dropdown visibility
+
+      // If the dropdown is open, prevent the dropdown from closing immediately
+      if (dropdown.classList.contains('active')) {
+        // Optionally handle behavior for active dropdown, like highlighting
+      }
+    });
+  });
+
+  // Optional: Automatically add active class based on URL hash
+  const currentHash = window.location.hash;
+  if (currentHash) {
+    const activeLink = document.querySelector(`.sidebar-link[href="${currentHash}"]`);
+    if (activeLink) {
+      removeActiveClass();
+      activeLink.classList.add('active');
+    }
+  }
+});
+
+
