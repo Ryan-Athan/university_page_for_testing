@@ -26,6 +26,44 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .icon-box {
+      border: 1px solid #131111;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .icon-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    .btn-dark:hover, .btn-light:hover {
+      transform: scale(1.05);
+    }
+  
+    .btn-primary:hover {
+      background-color: #0c8925;
+      color: #161515;
+      transform: scale(1.05);
+    }
+  
+    .breadcrumbs ol {
+      display: flex;
+      gap: 5px;
+      font-size: 16px;
+    }
+
+    .text-white{
+      color: #131111;
+    }
+
+    .text-white .lead{
+      color: #131111;
+    }
+  </style>
   
 
 </head>
@@ -44,11 +82,11 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home<br></a></li>
-          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="trainers.html">Trainers</a></li>
           <li><a href="events.html">Events</a></li>
-          <li class="dropdown"><a href="academic.html"><span>Academic</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="academic.html" class="active"><span>Academic</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="course.html">Courses</a></li>
               <li><a href="bachelor.html">Bachelor's</a></li>
@@ -76,7 +114,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>About Us<br></h1>
+              <h1>Academic<br></h1>
               <p class="mb-0">Welcome to the National University Of Computer Studies. Discover a world-class institution committed to advancing knowledge in computer science, artificial intelligence, and technology innovation. Join us to shape the future of technology</p>
             </div>
           </div>
@@ -91,6 +129,52 @@
         </div>
       </nav>
     </div><!-- End Page Title -->
+
+
+    <!-- Academic Highlights -->
+  <section class="academic-highlights py-5">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col">
+          <h2 class="fw-bold">Why Choose NUCS?</h2>
+          <p class="text-muted">Pioneering the future of technology through innovation, research, and excellence in teaching.</p>
+        </div>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box">
+            <i class="bi bi-laptop display-3 text-primary mb-3"></i>
+            <h4 class="fw-bold">Cutting-Edge Programs</h4>
+            <p>Comprehensive degrees in computer science, AI, cybersecurity, and more.</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box">
+            <i class="bi bi-book display-3 text-primary mb-3"></i>
+            <h4 class="fw-bold">World-Class Faculty</h4>
+            <p>Learn from leading experts and researchers shaping the tech industry.</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon-box">
+            <i class="bi bi-lightbulb display-3 text-primary mb-3"></i>
+            <h4 class="fw-bold">Innovative Research</h4>
+            <p>Be at the forefront of innovation with access to advanced labs and projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section py-5 text-white">
+    <div class="container text-center" data-aos="fade">
+      <h2 class="fw-bold mb-4">Shape the Future of Technology</h2>
+      <p class="lead mb-4">Join a thriving academic community and prepare for a career in innovation.</p>
+      <a href="admission.html" class="btn btn-light btn-lg px-5 py-3">Apply Now</a>
+    </div>
+  </section>
 
  
   </main>

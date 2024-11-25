@@ -66,7 +66,7 @@
       }
 
       a:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
 
       /* Header */
@@ -202,6 +202,28 @@
       .cta:hover {
         background-color: #004d33;
       }
+
+      @media (max-width: 768px) {
+        .sidebar {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100%;
+          z-index: 1000;
+          overflow-y: auto;
+          width: 200px;
+        }
+
+      @media (max-width: 768px) {
+        .headera {
+          height: 200px;
+        }
+
+        .main-container {
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
 
@@ -286,10 +308,10 @@
         <!-- Sidebar -->
         <nav class="sidebar">
           <ul>
-            <li><a href="#courses" class="sidebar-link">Courses</a></li>
-            <li><a href="#bachelors" class="sidebar-link">Bachelor's</a></li>
-            <li><a href="#masters" class="sidebar-link">Master's</a></li>
-            <li><a href="#phd" class="sidebar-link">PhD</a></li>
+            <li><a href="course.html" class="sidebar-link">Courses</a></li>
+            <li><a href="bachelor.html" class="sidebar-link">Bachelor's</a></li>
+            <li><a href="master.html" class="sidebar-link">Master's</a></li>
+            <li><a href="phd.html" class="sidebar-link">PhD</a></li>
             <li><a href="program.html" class="sidebar-link">Joint Programs</a></li>
             <li><a href="events.html" class="sidebar-link">Student Events</a></li>
             <li><a href="events.html" class="sidebar-link">Student Events</a></li>
@@ -316,8 +338,8 @@
           </ul>
 
           <div class="cta-buttons">
-            <a href="#faculty" class="cta">For Faculty & Staff</a>
-            <a href="#students" class="cta">For Current CS Students</a>
+            <a href="bachelorform.html" class="cta">For Faculty & Staff</a>
+            <a href="bachelorform.html" class="cta">For Current CS Students</a>
           </div>
         </section>
       </div>
